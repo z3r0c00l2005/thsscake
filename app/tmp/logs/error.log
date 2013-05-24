@@ -1,0 +1,1162 @@
+2013-05-21 08:22:01 Error: [PDOException] SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'graphic_on_hold' at row 1
+Request URL: /aircraftsystemgraphics/add/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `th...')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Model.php(1744): DboSource->create(Object(Aircraftsystemgraphic), Array, Array)
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\AircraftsystemgraphicsController.php(53): Model->save(Array)
+#5 [internal function]: AircraftsystemgraphicsController->add('1')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AircraftsystemgraphicsController), Array)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemgraphicsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-21 12:33:49 Error: [NotFoundException] Invalid aircraftsystem
+Request URL: /Aircraftsystems/view/on_hold.png
+Stack Trace:
+#0 [internal function]: AircraftsystemsController->view('on_hold.png')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AircraftsystemsController), Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-21 12:34:42 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /webroot/img
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-21 13:04:16 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ',' or ';' in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Aircraftsystems\view.ctp, line 22]
+2013-05-21 13:04:16 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ',' or ';'
+Request URL: /Aircraftsystems/view/2
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 22, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 22, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-21 14:19:23 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Group' at line 1
+Request URL: /users
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('Group', Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(670): DboSource->execute('Group', Array, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(612): DboSource->fetchAll('Group', Array, Array)
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Model.php(800): DboSource->query('Group', Array, Object(User))
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php(45): Model->__call('Group', Array)
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php(45): User->Group('id')
+#7 [internal function]: UsersController->index()
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-05-21 14:20:22 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id' at line 1
+Request URL: /users
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('id', Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(670): DboSource->execute('id', Array, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(612): DboSource->fetchAll('id', Array, Array)
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Model.php(800): DboSource->query('id', Array, Object(Group))
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php(45): Model->__call('id', Array)
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php(45): Group->id()
+#7 [internal function]: UsersController->index()
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-05-21 14:23:52 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Administrators
+    [Aro0.foreign_key] => 
+)
+"
+Request URL: /users/initDB
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(219): AclNode->node(Object(Group))
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(170): Permission->getAclLink(Object(Group), 'controllers')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(87): Permission->allow(Object(Group), 'controllers', '*', 1)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\AclComponent.php(122): DbAcl->allow(Object(Group), 'controllers', '*')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php(138): AclComponent->allow(Object(Group), 'controllers')
+#5 [internal function]: UsersController->initDB()
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-21 14:27:04 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php, line 137]
+2013-05-21 14:27:04 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /users/initDB
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 137)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 137, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 137, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-21 14:27:18 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php, line 137]
+2013-05-21 14:27:18 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /users/initDB
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 137)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 137, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 137, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-21 14:27:25 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php, line 137]
+2013-05-21 14:27:25 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /users/initDB
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 137)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 137, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 137, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-21 14:27:37 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php, line 137]
+2013-05-21 14:27:37 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /users/initDB
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 137)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 137, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 137, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-21 14:28:55 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php, line 136]
+2013-05-21 14:28:55 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /users/initDB
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 136)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 136, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 136, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-21 14:29:23 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php, line 137]
+2013-05-21 14:29:23 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /users/initDB
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 137)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 137, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 137, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-21 14:29:29 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Group
+    [Aro0.foreign_key] => 
+)
+"
+Request URL: /users/initDB
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(219): AclNode->node(Object(Group))
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(170): Permission->getAclLink(Object(Group), 'controllers')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(87): Permission->allow(Object(Group), 'controllers', '*', 1)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\AclComponent.php(122): DbAcl->allow(Object(Group), 'controllers', '*')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php(140): AclComponent->allow(Object(Group), 'controllers')
+#5 [internal function]: UsersController->initDB()
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-21 14:29:56 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Group
+    [Aro0.foreign_key] => 
+)
+"
+Request URL: /users/initDB
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(219): AclNode->node(Object(Group))
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(170): Permission->getAclLink(Object(Group), 'controllers')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(87): Permission->allow(Object(Group), 'controllers', '*', 1)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\AclComponent.php(122): DbAcl->allow(Object(Group), 'controllers', '*')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php(140): AclComponent->allow(Object(Group), 'controllers')
+#5 [internal function]: UsersController->initDB()
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-21 14:42:09 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Layouts\default.ctp, line 46]
+2013-05-21 14:42:09 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /users/login
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 46)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 46, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 46, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-21 14:42:49 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Layouts\default.ctp, line 46]
+2013-05-21 14:42:49 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /users/login
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 46)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 46, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 46, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-21 14:42:53 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Layouts\default.ctp, line 46]
+2013-05-21 14:42:53 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /users/login
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 46)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 46, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 46, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-21 14:49:05 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Auth')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('Auth')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Layouts\default.ctp(62): View->__get('Auth')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(535): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircrafttypesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-21 14:49:25 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Auth')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('Auth')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Layouts\default.ctp(62): View->__get('Auth')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(535): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircrafttypesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-21 14:49:32 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Auth')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('Auth')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Layouts\default.ctp(62): View->__get('Auth')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(535): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircrafttypesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-21 14:49:54 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Auth')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('Auth')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Layouts\default.ctp(62): View->__get('Auth')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(535): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircrafttypesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-21 14:49:55 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Auth')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('Auth')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Layouts\default.ctp(62): View->__get('Auth')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(535): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircrafttypesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-21 14:50:04 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Auth')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('Auth')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Layouts\default.ctp(62): View->__get('Auth')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(535): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircrafttypesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-21 14:50:06 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Auth')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('Auth')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Layouts\default.ctp(62): View->__get('Auth')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(535): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircrafttypesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-21 14:50:32 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Auth')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('Auth')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Layouts\default.ctp(62): View->__get('Auth')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(535): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircrafttypesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-21 14:50:48 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Auth')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('Auth')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Layouts\default.ctp(62): View->__get('Auth')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(535): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircrafttypesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-21 14:51:23 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Auth')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('Auth')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Layouts\default.ctp(62): View->__get('Auth')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(535): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'default')
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircrafttypesController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-21 14:52:48 Error: Fatal Error (1): Call to a member function read() on a non-object in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Layouts\default.ctp, line 62]
+2013-05-21 14:52:48 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Program File...', 62)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Program File...', 62, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Program File...', 62, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-21 14:53:00 Error: Fatal Error (1): Call to a member function read() on a non-object in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Layouts\default.ctp, line 62]
+2013-05-21 14:53:00 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Program File...', 62)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Program File...', 62, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Program File...', 62, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-21 14:54:20 Error: Fatal Error (64): Cannot use [] for reading in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Layouts\default.ctp, line 63]
+2013-05-21 14:54:20 Error: [FatalErrorException] Cannot use [] for reading
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', 'C:\Program File...', 63)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', 'C:\Program File...', 63, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', 'C:\Program File...', 63, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-21 14:56:08 Error: Fatal Error (4): syntax error, unexpected '[', expecting ',' or ';' in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Layouts\default.ctp, line 62]
+2013-05-21 14:56:08 Error: [FatalErrorException] syntax error, unexpected '[', expecting ',' or ';'
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 62, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 62, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-21 15:17:15 Error: [MissingBehaviorException] Behavior class WhoDidItBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'WhoDidItBehavior',
+  'plugin' => false,
+)
+Request URL: /aircraftsystemcomments/edit/1/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\BehaviorCollection.php(68): BehaviorCollection->load('WhoDidIt', Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Model.php(749): BehaviorCollection->init('Aircraftsystemc...', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Utility\ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(734): ClassRegistry::init(Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(367): Controller->loadModel('Aircraftsystemc...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(405): Controller->__isset('Aircraftsystemc...')
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\AircraftsystemcommentsController.php(73): Controller->__get('Aircraftsystemc...')
+#8 [internal function]: AircraftsystemcommentsController->edit('1', '1')
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AircraftsystemcommentsController), Array)
+#10 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemcommentsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-05-21 15:19:50 Error: [MissingBehaviorException] Behavior class WhoDidItBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'WhoDidItBehavior',
+  'plugin' => false,
+)
+Request URL: /aircraftsystemcomments/add/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\BehaviorCollection.php(68): BehaviorCollection->load('WhoDidIt', Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Model.php(749): BehaviorCollection->init('Aircraftsystemc...', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Utility\ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(734): ClassRegistry::init(Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(367): Controller->loadModel('Aircraftsystemc...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(405): Controller->__isset('Aircraftsystemc...')
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\AircraftsystemcommentsController.php(41): Controller->__get('Aircraftsystemc...')
+#8 [internal function]: AircraftsystemcommentsController->add('1')
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AircraftsystemcommentsController), Array)
+#10 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemcommentsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-05-21 15:20:21 Error: [MissingBehaviorException] Behavior class WhoDidItBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'WhoDidItBehavior',
+  'plugin' => false,
+)
+Request URL: /aircraftsystemcomments/add/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\BehaviorCollection.php(68): BehaviorCollection->load('WhoDidIt', Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Model.php(749): BehaviorCollection->init('Aircraftsystemc...', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Utility\ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(734): ClassRegistry::init(Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(367): Controller->loadModel('Aircraftsystemc...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(405): Controller->__isset('Aircraftsystemc...')
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\AircraftsystemcommentsController.php(41): Controller->__get('Aircraftsystemc...')
+#8 [internal function]: AircraftsystemcommentsController->add('1')
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AircraftsystemcommentsController), Array)
+#10 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemcommentsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-05-21 15:26:51 Error: [MissingBehaviorException] Behavior class WhoDidItBehavior could not be found.
+Exception Attributes: array (
+  'class' => 'WhoDidItBehavior',
+  'plugin' => false,
+)
+Request URL: /aircraftsystemcomments/add/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\BehaviorCollection.php(68): BehaviorCollection->load('WhoDidIt', Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Model.php(749): BehaviorCollection->init('Aircraftsystemc...', Array)
+#2 [internal function]: Model->__construct(Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Utility\ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(734): ClassRegistry::init(Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(367): Controller->loadModel('Aircraftsystemc...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(405): Controller->__isset('Aircraftsystemc...')
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\AircraftsystemcommentsController.php(41): Controller->__get('Aircraftsystemc...')
+#8 [internal function]: AircraftsystemcommentsController->add('1')
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AircraftsystemcommentsController), Array)
+#10 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemcommentsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-05-21 15:42:21 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Aircraftsystems\view.ctp, line 126]
+2013-05-21 15:42:21 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /aircraftsystems/view/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 126)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 126, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 126, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-21 15:42:31 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /aircraftsystems/view/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('User')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('User')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Aircraftsystems\view.ctp(126): View->__get('User')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(471): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-21 15:42:53 Error: [MissingHelperException] Helper class aircraftsystemcommentHelper could not be found.
+Exception Attributes: array (
+  'class' => 'aircraftsystemcommentHelper',
+  'plugin' => false,
+)
+Request URL: /aircraftsystems/view/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('aircraftsystemc...')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('aircraftsystemc...')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Aircraftsystems\view.ctp(126): View->__get('aircraftsystemc...')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(471): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-21 15:49:31 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Layouts\default.ctp, line 66]
+2013-05-21 15:49:31 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /Aircraftsystems/view/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 66)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 66, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 66, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-21 15:49:52 Error: Fatal Error (1): Call to undefined method View::read() in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Layouts\default.ctp, line 66]
+2013-05-21 15:49:52 Error: [FatalErrorException] Call to undefined method View::read()
+Request URL: /Aircraftsystems/view/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Program File...', 66)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Program File...', 66, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Program File...', 66, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-21 15:54:52 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /Aircraftsystems/view/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('User')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('User')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Aircraftsystems\view.ctp(124): View->__get('User')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(471): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-21 15:55:13 Error: [MissingHelperException] Helper class aircraftsystemcommentHelper could not be found.
+Exception Attributes: array (
+  'class' => 'aircraftsystemcommentHelper',
+  'plugin' => false,
+)
+Request URL: /Aircraftsystems/view/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('aircraftsystemc...')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('aircraftsystemc...')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Aircraftsystems\view.ctp(124): View->__get('aircraftsystemc...')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(471): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-21 15:55:22 Error: [MissingHelperException] Helper class aircraftsystemcommentsHelper could not be found.
+Exception Attributes: array (
+  'class' => 'aircraftsystemcommentsHelper',
+  'plugin' => false,
+)
+Request URL: /Aircraftsystems/view/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('aircraftsystemc...')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('aircraftsystemc...')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Aircraftsystems\view.ctp(124): View->__get('aircraftsystemc...')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(471): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 08:24:46 Error: Fatal Error (4): syntax error, unexpected '}', expecting ')' in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Model\Aircraftsystemcomment.php, line 65]
+2013-05-22 08:24:46 Error: [FatalErrorException] syntax error, unexpected '}', expecting ')'
+Request URL: /aircraftsystems/view/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 65)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 65, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 65, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-22 08:24:59 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Model\Aircraftsystemcomment.php, line 66]
+2013-05-22 08:24:59 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
+Request URL: /aircraftsystems/view/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 66)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 66, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 66, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-22 08:30:22 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /aircraftsystems/view/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('User')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('User')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Aircraftsystems\view.ctp(126): View->__get('User')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(471): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 08:45:36 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /Aircraftsystems/view/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('User')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('User')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Aircraftsystems\view.ctp(126): View->__get('User')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(471): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 08:46:41 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /Aircraftsystems/view/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(884): HelperCollection->load('User', Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(464): View->loadHelpers()
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-05-22 08:47:20 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /Aircraftsystems/view/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('User')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('User')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Aircraftsystems\view.ctp(126): View->__get('User')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(471): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 09:13:39 Error: Fatal Error (4): syntax error, unexpected $end in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Aircrafttypes\index.ctp, line 50]
+2013-05-22 09:13:39 Error: [FatalErrorException] syntax error, unexpected $end
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 50, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 50, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-22 09:14:05 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Aircrafttypes\index.ctp, line 40]
+2013-05-22 09:14:05 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 40, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 40, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-22 09:14:22 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Aircrafttypes\index.ctp, line 42]
+2013-05-22 09:14:22 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 42, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 42, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-22 09:14:34 Error: [MissingHelperException] Helper class AclHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AclHelper',
+  'plugin' => false,
+)
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Acl')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('Acl')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Aircrafttypes\index.ctp(38): View->__get('Acl')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(471): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircrafttypesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 09:22:19 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Utility\Debugger.php, line 530]
+2013-05-22 09:22:19 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\Program File...', 530)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\Program File...', 530, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\Program File...', 530, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-22 11:00:13 Error: [NotFoundException] Invalid System
+Request URL: /aircraftsystemcomments/add
+Stack Trace:
+#0 [internal function]: AircraftsystemcommentsController->add()
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AircraftsystemcommentsController), Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemcommentsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-22 11:00:18 Error: [NotFoundException] Invalid Aircraft Type
+Request URL: /aircraftsystems/add
+Stack Trace:
+#0 [internal function]: AircraftsystemsController->add()
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AircraftsystemsController), Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-22 11:59:58 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin' for key 'username'
+Request URL: /users/add
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `th...')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Model.php(1744): DboSource->create(Object(User), Array, Array)
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php(64): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 12:05:39 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Group
+    [Aro0.foreign_key] => 9
+)
+"
+Request URL: /
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(90): AclNode->node(Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'controllers/Air...', '*')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\AclComponent.php(109): DbAcl->check(Array, 'controllers/Air...', '*')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\Auth\ActionsAuthorize.php(40): AclComponent->check(Array, 'controllers/Air...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\AuthComponent.php(412): ActionsAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\AuthComponent.php(336): AuthComponent->isAuthorized(Array)
+#6 [internal function]: AuthComponent->startup(Object(AircrafttypesController))
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#12 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircrafttypesController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-22 12:05:40 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Group
+    [Aro0.foreign_key] => 8
+)
+"
+Request URL: /users/initDB
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(219): AclNode->node(Object(Group))
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(170): Permission->getAclLink(Object(Group), 'controllers')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(87): Permission->allow(Object(Group), 'controllers', '*', 1)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\AclComponent.php(122): DbAcl->allow(Object(Group), 'controllers', '*')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php(130): AclComponent->allow(Object(Group), 'controllers')
+#5 [internal function]: UsersController->initDB()
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 12:08:45 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'manager' for key 'username'
+Request URL: /users/add
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `th...')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Model.php(1744): DboSource->create(Object(User), Array, Array)
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php(64): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 12:09:00 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Group
+    [Aro0.foreign_key] => Administrators
+)
+"
+Request URL: /users/initDB
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(219): AclNode->node(Object(Group))
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(170): Permission->getAclLink(Object(Group), 'controllers')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(87): Permission->allow(Object(Group), 'controllers', '*', 1)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\AclComponent.php(122): DbAcl->allow(Object(Group), 'controllers', '*')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php(130): AclComponent->allow(Object(Group), 'controllers')
+#5 [internal function]: UsersController->initDB()
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 12:09:08 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Group
+    [Aro0.foreign_key] => Group::Administrators
+)
+"
+Request URL: /users/initDB
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(219): AclNode->node(Object(Group))
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(170): Permission->getAclLink(Object(Group), 'controllers')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(87): Permission->allow(Object(Group), 'controllers', '*', 1)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\AclComponent.php(122): DbAcl->allow(Object(Group), 'controllers', '*')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php(130): AclComponent->allow(Object(Group), 'controllers')
+#5 [internal function]: UsersController->initDB()
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 12:09:20 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Group
+    [Aro0.foreign_key] => 
+)
+"
+Request URL: /users/initDB
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(219): AclNode->node(Object(Group))
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(170): Permission->getAclLink(Object(Group), 'controllers')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(87): Permission->allow(Object(Group), 'controllers', '*', 1)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\AclComponent.php(122): DbAcl->allow(Object(Group), 'controllers', '*')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php(130): AclComponent->allow(Object(Group), 'controllers')
+#5 [internal function]: UsersController->initDB()
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 12:09:44 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Group::Administrators
+    [Aro0.foreign_key] => 
+)
+"
+Request URL: /users/initDB
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(219): AclNode->node(Object(Group))
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(170): Permission->getAclLink(Object(Group), 'controllers')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(87): Permission->allow(Object(Group), 'controllers', '*', 1)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\AclComponent.php(122): DbAcl->allow(Object(Group), 'controllers', '*')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php(130): AclComponent->allow(Object(Group), 'controllers')
+#5 [internal function]: UsersController->initDB()
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 12:09:56 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Administrators
+    [Aro0.foreign_key] => 
+)
+"
+Request URL: /users/initDB
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(219): AclNode->node(Object(Group))
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(170): Permission->getAclLink(Object(Group), 'controllers')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(87): Permission->allow(Object(Group), 'controllers', '*', 1)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\AclComponent.php(122): DbAcl->allow(Object(Group), 'controllers', '*')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php(130): AclComponent->allow(Object(Group), 'controllers')
+#5 [internal function]: UsersController->initDB()
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 12:10:25 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Administrators
+    [Aro0.foreign_key] => 
+)
+"
+Request URL: /users/initDB
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(219): AclNode->node(Object(Group))
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(170): Permission->getAclLink(Object(Group), 'controllers')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(87): Permission->allow(Object(Group), 'controllers', '*', 1)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\AclComponent.php(122): DbAcl->allow(Object(Group), 'controllers', '*')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php(130): AclComponent->allow(Object(Group), 'controllers')
+#5 [internal function]: UsersController->initDB()
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 12:11:14 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => model
+    [Aro0.foreign_key] => G
+)
+"
+Request URL: /users/initDB
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(219): AclNode->node(Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(170): Permission->getAclLink(Array, 'controllers')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(87): Permission->allow(Array, 'controllers', '*', 1)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\AclComponent.php(122): DbAcl->allow(Array, 'controllers', '*')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php(130): AclComponent->allow(Array, 'controllers')
+#5 [internal function]: UsersController->initDB()
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 12:11:41 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => model
+    [Aro0.foreign_key] => G
+)
+"
+Request URL: /users/initDB
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(219): AclNode->node(Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Permission.php(170): Permission->getAclLink(Array, 'controllers')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(87): Permission->allow(Array, 'controllers', '*', 1)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Component\AclComponent.php(122): DbAcl->allow(Array, 'controllers', '*')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php(130): AclComponent->allow(Array, 'controllers')
+#5 [internal function]: UsersController->initDB()
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 12:48:15 Error: [MissingHelperException] Helper class AclLinkHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AclLinkHelper',
+  'plugin' => false,
+)
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(884): HelperCollection->load('AclLink', Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(464): View->loadHelpers()
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircrafttypesController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-05-22 12:48:43 Error: [MissingHelperException] Helper class AclLinkHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AclLinkHelper',
+  'plugin' => false,
+)
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(884): HelperCollection->load('AclLink', Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(464): View->loadHelpers()
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircrafttypesController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-05-22 12:48:56 Error: [MissingHelperException] Helper class AclLinkHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AclLinkHelper',
+  'plugin' => false,
+)
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(884): HelperCollection->load('AclLink', Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(464): View->loadHelpers()
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircrafttypesController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-05-22 12:55:07 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 7
+)
+"
+Request URL: /users/edit/7
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Behavior\AclBehavior.php(91): AclNode->node(Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Behavior\AclBehavior.php(117): AclBehavior->node(Object(User), NULL, 'Aro')
+#2 [internal function]: AclBehavior->afterSave(Object(User), false, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Model\Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\UsersController.php(87): Model->save(Array)
+#8 [internal function]: UsersController->edit('7')
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-05-22 13:04:50 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Helper\AclLinkHelper.php, line 10]
+2013-05-22 13:04:50 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 10, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 10, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-22 14:03:37 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 36955737 bytes) in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Utility\Debugger.php, line 563]
+2013-05-22 14:03:37 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 36955737 bytes)
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\Program File...', 563)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\Program File...', 563, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\Program File...', 563, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-22 14:04:18 Error: [MissingHelperException] Helper class AclHtmlHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AclHtmlHelper',
+  'plugin' => false,
+)
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('AclHtml')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('AclHtml')
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\View\Aircrafttypes\index.ctp(37): View->__get('AclHtml')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(947): include('C:\Program File...')
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(909): View->_evaluate('C:\Program File...', Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\View\View.php(471): View->_render('C:\Program File...')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircrafttypesController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-22 14:09:37 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\Controller\AircrafttypesController.php, line 23]
+2013-05-22 14:09:37 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 23, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 23, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-22 14:32:14 Error: [MissingControllerException] Controller class AircrafttypesController could not be found.
+Exception Attributes: array (
+  'class' => 'AircrafttypesController',
+  'plugin' => 'Acl',
+)
+Request URL: /admin/acl/aircrafttypes
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

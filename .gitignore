@@ -1,6 +1,12 @@
 # User specific & automatically generated files #
 #################################################
-/app/tmp
+/app/tmp/cache/models/my*
+/app/tmp/cache/persistent/my*
+/app/tmp/cache/persistent/co*
+/app/tmp/cache/views/my*
+/app/tmp/error.log
+/app/tmp/sessions/my*
+/app/tmp/tests/my*
 /lib/Cake/Console/Templates/skel/tmp/
 /app/uploads
 
