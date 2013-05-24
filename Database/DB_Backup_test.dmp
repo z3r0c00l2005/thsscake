@@ -1,0 +1,391 @@
+CREATE DATABASE  IF NOT EXISTS `thssdb` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `thssdb`;
+-- MySQL dump 10.13  Distrib 5.6.11, for Win32 (x86)
+--
+-- Host: localhost    Database: thssdb
+-- ------------------------------------------------------
+-- Server version	5.6.11-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `acos`
+--
+
+DROP TABLE IF EXISTS `acos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `acos` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `parent_id` int(10) DEFAULT NULL,
+  `model` varchar(255) DEFAULT NULL,
+  `foreign_key` int(10) DEFAULT NULL,
+  `alias` varchar(255) DEFAULT NULL,
+  `lft` int(10) DEFAULT NULL,
+  `rght` int(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=260 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `acos`
+--
+
+LOCK TABLES `acos` WRITE;
+/*!40000 ALTER TABLE `acos` DISABLE KEYS */;
+INSERT INTO `acos` VALUES (68,NULL,NULL,NULL,'controllers',1,188),(70,68,NULL,NULL,'Aircraftsystemcomments',2,13),(71,70,NULL,NULL,'index',3,4),(72,70,NULL,NULL,'view',5,6),(73,70,NULL,NULL,'add',7,8),(74,70,NULL,NULL,'edit',9,10),(75,70,NULL,NULL,'delete',11,12),(76,68,NULL,NULL,'Aircraftsystemgraphicbookings',14,25),(77,76,NULL,NULL,'index',15,16),(78,76,NULL,NULL,'view',17,18),(79,76,NULL,NULL,'add',19,20),(80,76,NULL,NULL,'edit',21,22),(81,76,NULL,NULL,'delete',23,24),(82,68,NULL,NULL,'Aircraftsystemgraphics',26,37),(83,82,NULL,NULL,'index',27,28),(84,82,NULL,NULL,'view',29,30),(85,82,NULL,NULL,'add',31,32),(86,82,NULL,NULL,'edit',33,34),(87,82,NULL,NULL,'delete',35,36),(88,68,NULL,NULL,'Aircraftsystemgraphicscomments',38,49),(89,88,NULL,NULL,'index',39,40),(90,88,NULL,NULL,'view',41,42),(91,88,NULL,NULL,'add',43,44),(92,88,NULL,NULL,'edit',45,46),(93,88,NULL,NULL,'delete',47,48),(94,68,NULL,NULL,'Aircraftsystems',50,61),(95,94,NULL,NULL,'index',51,52),(96,94,NULL,NULL,'view',53,54),(97,94,NULL,NULL,'add',55,56),(98,94,NULL,NULL,'edit',57,58),(99,94,NULL,NULL,'delete',59,60),(100,68,NULL,NULL,'Aircrafttypes',62,73),(101,100,NULL,NULL,'index',63,64),(102,100,NULL,NULL,'view',65,66),(103,100,NULL,NULL,'add',67,68),(104,100,NULL,NULL,'edit',69,70),(105,100,NULL,NULL,'delete',71,72),(106,68,NULL,NULL,'Groups',74,85),(107,106,NULL,NULL,'index',75,76),(108,106,NULL,NULL,'view',77,78),(109,106,NULL,NULL,'add',79,80),(110,106,NULL,NULL,'edit',81,82),(111,106,NULL,NULL,'delete',83,84),(112,68,NULL,NULL,'Pages',86,89),(113,112,NULL,NULL,'display',87,88),(114,68,NULL,NULL,'Uploads',90,105),(115,114,NULL,NULL,'index',91,92),(116,114,NULL,NULL,'view',93,94),(117,114,NULL,NULL,'add',95,96),(118,114,NULL,NULL,'edit',97,98),(119,114,NULL,NULL,'delete',99,100),(120,114,NULL,NULL,'uploadFile',101,102),(121,114,NULL,NULL,'download',103,104),(122,68,NULL,NULL,'Users',106,123),(123,122,NULL,NULL,'login',107,108),(124,122,NULL,NULL,'logout',109,110),(125,122,NULL,NULL,'index',111,112),(126,122,NULL,NULL,'view',113,114),(127,122,NULL,NULL,'add',115,116),(128,122,NULL,NULL,'edit',117,118),(129,122,NULL,NULL,'delete',119,120),(130,122,NULL,NULL,'initDB',121,122),(228,68,NULL,NULL,'Acl',124,179),(229,228,NULL,NULL,'Acl',125,130),(230,229,NULL,NULL,'index',126,127),(231,229,NULL,NULL,'admin_index',128,129),(232,228,NULL,NULL,'Acos',131,142),(233,232,NULL,NULL,'admin_index',132,133),(234,232,NULL,NULL,'admin_empty_acos',134,135),(235,232,NULL,NULL,'admin_build_acl',136,137),(236,232,NULL,NULL,'admin_prune_acos',138,139),(237,232,NULL,NULL,'admin_synchronize',140,141),(238,228,NULL,NULL,'Aros',143,178),(239,238,NULL,NULL,'admin_index',144,145),(240,238,NULL,NULL,'admin_check',146,147),(241,238,NULL,NULL,'admin_users',148,149),(242,238,NULL,NULL,'admin_update_user_role',150,151),(243,238,NULL,NULL,'admin_ajax_role_permissions',152,153),(244,238,NULL,NULL,'admin_role_permissions',154,155),(245,238,NULL,NULL,'admin_user_permissions',156,157),(246,238,NULL,NULL,'admin_empty_permissions',158,159),(247,238,NULL,NULL,'admin_clear_user_specific_permissions',160,161),(248,238,NULL,NULL,'admin_grant_all_controllers',162,163),(249,238,NULL,NULL,'admin_deny_all_controllers',164,165),(250,238,NULL,NULL,'admin_get_role_controller_permission',166,167),(251,238,NULL,NULL,'admin_grant_role_permission',168,169),(252,238,NULL,NULL,'admin_deny_role_permission',170,171),(253,238,NULL,NULL,'admin_get_user_controller_permission',172,173),(254,238,NULL,NULL,'admin_grant_user_permission',174,175),(255,238,NULL,NULL,'admin_deny_user_permission',176,177),(256,68,NULL,NULL,'DebugKit',180,187),(257,256,NULL,NULL,'ToolbarAccess',181,186),(258,257,NULL,NULL,'history_state',182,183),(259,257,NULL,NULL,'sql_explain',184,185);
+/*!40000 ALTER TABLE `acos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `aircraftsystemcomments`
+--
+
+DROP TABLE IF EXISTS `aircraftsystemcomments`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `aircraftsystemcomments` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `aircraftsystem_id` int(11) DEFAULT NULL,
+  `comment` longtext,
+  `created_by` varchar(255) DEFAULT NULL,
+  `modified_by` varchar(255) DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_aircraftsystemcomments_aircraftsystems1_idx` (`aircraftsystem_id`),
+  CONSTRAINT `fk_aircraftsystemcomments_aircraftsystems1` FOREIGN KEY (`aircraftsystem_id`) REFERENCES `aircraftsystems` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `aircraftsystemcomments`
+--
+
+LOCK TABLES `aircraftsystemcomments` WRITE;
+/*!40000 ALTER TABLE `aircraftsystemcomments` DISABLE KEYS */;
+INSERT INTO `aircraftsystemcomments` VALUES (1,1,'a','admin','admin','2013-05-22 14:25:47','2013-05-22 14:25:47'),(2,1,'b','admin','reviewer','2013-05-22 14:25:52','2013-05-22 14:27:53'),(3,1,'Mine\r\n','reviewer','reviewer','2013-05-22 14:27:49','2013-05-22 14:27:49');
+/*!40000 ALTER TABLE `aircraftsystemcomments` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `aircraftsystemgraphicbookings`
+--
+
+DROP TABLE IF EXISTS `aircraftsystemgraphicbookings`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `aircraftsystemgraphicbookings` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `aircraftsystemgraphic_id` int(11) DEFAULT NULL,
+  `work_carried_out` longtext,
+  `created_by` varchar(255) DEFAULT NULL,
+  `hours_expended` float DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  `modified_by` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_aircraftsystemgraphicworkdone_aircraftsystemgraphics1_idx` (`aircraftsystemgraphic_id`),
+  CONSTRAINT `fk_aircraftsystemgraphicworkdone_aircraftsystemgraphics1` FOREIGN KEY (`aircraftsystemgraphic_id`) REFERENCES `aircraftsystemgraphics` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `aircraftsystemgraphicbookings`
+--
+
+LOCK TABLES `aircraftsystemgraphicbookings` WRITE;
+/*!40000 ALTER TABLE `aircraftsystemgraphicbookings` DISABLE KEYS */;
+INSERT INTO `aircraftsystemgraphicbookings` VALUES (1,1,'a','admin',1,'2013-05-22 14:25:58','2013-05-22 14:25:58','admin');
+/*!40000 ALTER TABLE `aircraftsystemgraphicbookings` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `aircraftsystemgraphics`
+--
+
+DROP TABLE IF EXISTS `aircraftsystemgraphics`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `aircraftsystemgraphics` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `aircraftsystem_id` int(11) DEFAULT NULL,
+  `graphic_title` varchar(100) NOT NULL,
+  `graphic_description` varchar(255) DEFAULT NULL,
+  `graphic_type` varchar(50) DEFAULT NULL,
+  `graphic_media_label` varchar(50) NOT NULL,
+  `graphic_estimated_hours` double NOT NULL,
+  `graphic_adj_estimated_hours` double DEFAULT NULL,
+  `graphic_status` varchar(15) NOT NULL DEFAULT 'Not Started',
+  `graphic_on_hold` tinyint(1) DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `fk_aircraftsystemgraphics_aircraftsystems1_idx` (`aircraftsystem_id`),
+  CONSTRAINT `fk_aircraftsystemgraphics_aircraftsystems1` FOREIGN KEY (`aircraftsystem_id`) REFERENCES `aircraftsystems` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `aircraftsystemgraphics`
+--
+
+LOCK TABLES `aircraftsystemgraphics` WRITE;
+/*!40000 ALTER TABLE `aircraftsystemgraphics` DISABLE KEYS */;
+INSERT INTO `aircraftsystemgraphics` VALUES (1,1,'a','a','2D','a',1,1,'Not Started',0),(2,1,'b','b','2D','b',2,2,'Not Started',0),(3,1,'c','c','2D','c',3,3,'Not Started',0);
+/*!40000 ALTER TABLE `aircraftsystemgraphics` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `aircraftsystemgraphicscomments`
+--
+
+DROP TABLE IF EXISTS `aircraftsystemgraphicscomments`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `aircraftsystemgraphicscomments` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `aircraftsystemgraphic_id` int(11) DEFAULT NULL,
+  `comment` longtext,
+  `created_by` varchar(255) DEFAULT NULL,
+  `modified_by` varchar(255) DEFAULT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_aircraftsystemgraphicscomments_aircraftsystemgraphics1_idx` (`aircraftsystemgraphic_id`),
+  CONSTRAINT `fk_aircraftsystemgraphicscomments_aircraftsystemgraphics1` FOREIGN KEY (`aircraftsystemgraphic_id`) REFERENCES `aircraftsystemgraphics` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `aircraftsystemgraphicscomments`
+--
+
+LOCK TABLES `aircraftsystemgraphicscomments` WRITE;
+/*!40000 ALTER TABLE `aircraftsystemgraphicscomments` DISABLE KEYS */;
+INSERT INTO `aircraftsystemgraphicscomments` VALUES (1,1,'aa','admin','admin','2013-05-22 14:26:02','2013-05-22 14:26:02'),(2,1,'db','reviewer','reviewer','2013-05-22 14:28:50','2013-05-22 14:28:50');
+/*!40000 ALTER TABLE `aircraftsystemgraphicscomments` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `aircraftsystems`
+--
+
+DROP TABLE IF EXISTS `aircraftsystems`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `aircraftsystems` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `aircrafttype_id` int(11) DEFAULT NULL,
+  `system_name` varchar(100) DEFAULT NULL,
+  `system_description` varchar(255) DEFAULT NULL,
+  `system_workshare` varchar(10) DEFAULT NULL,
+  `system_status` varchar(15) NOT NULL DEFAULT 'Not Started',
+  PRIMARY KEY (`id`),
+  KEY `fk_aircraftsystems_aircrafttypes_idx` (`aircrafttype_id`),
+  CONSTRAINT `fk_aircraftsystems_aircrafttypes` FOREIGN KEY (`aircrafttype_id`) REFERENCES `aircrafttypes` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `aircraftsystems`
+--
+
+LOCK TABLES `aircraftsystems` WRITE;
+/*!40000 ALTER TABLE `aircraftsystems` DISABLE KEYS */;
+INSERT INTO `aircraftsystems` VALUES (1,1,'00','Helicopter - General','Italy','Not Started'),(2,1,'04','Airworthiness Limitations','Italy','Not Started'),(3,1,'05','Time Limits/Maint Checks','Italy','Not Started'),(4,1,'06','Dimensions & Areas','Italy','Not Started'),(5,1,'07','Lift, Shoreing, Recovery & Tra','Italy','Not Started'),(6,1,'08','Leveling & Weighing','Italy','Not Started'),(7,1,'09','Handling & Taxiing','Italy','Not Started'),(8,1,'10','Park, Moor, Store & Rtn to S','Italy','Not Started'),(9,1,'11','Placards and Markings','Italy','Not Started'),(10,1,'12','Servicing','Italy','Not Started'),(11,1,'15','Pilot Non-Tech Ground','UK','Not Started'),(12,1,'18','Vibration','UK','Not Started'),(13,1,'21','Environmental Control','Italy','Not Started'),(14,1,'22','Auto Flight','Italy','Not Started'),(15,1,'23','Communications','UK','Not Started'),(16,1,'24','Electrical Power','Italy','Not Started'),(17,1,'25','Equipment & Furnishings','UK','Not Started'),(18,1,'26','Fire Protection','Italy','Not Started'),(19,1,'28','Fuel','UK','Not Started'),(20,1,'29','Hydraulics','Italy','Not Started'),(21,1,'30','Ice & Rain Protection','Italy','Not Started'),(22,1,'31','Indicating and Recording','Italy','Not Started'),(23,1,'32','Landing Gear','Italy','Not Started'),(24,1,'33','Lighting','UK','Not Started'),(25,1,'34','Navigation','Italy','Not Started'),(26,1,'45','Central Maintenance','UK','Not Started'),(27,1,'46','System Int and Displays','UK','Not Started'),(28,1,'50','Cargo & Access Compartment','Italy','Not Started'),(29,1,'52','Doors','Italy','Not Started'),(30,1,'53','Airframe','Italy','Not Started'),(31,1,'56','Windows & Canopies','Italy','Not Started'),(32,1,'62','Main Rotor','UK','Not Started'),(33,1,'63','Main Rotor Drive','UK','Not Started'),(34,1,'64','Tail Rotor','UK','Not Started'),(35,1,'65','Tail Rotor Drive','UK','Not Started'),(36,1,'67','Rotors Flight Control','UK','Not Started'),(37,1,'71','Powerplant','UK','Not Started'),(38,1,'72','Engine','UK','Not Started'),(39,1,'73','Engine Fuel & Control','UK','Not Started'),(40,1,'74','Ignition','UK','Not Started'),(41,1,'75','Air','UK','Not Started'),(42,1,'76','Engine Controls','UK','Not Started'),(43,1,'78','Exhaust','UK','Not Started'),(44,1,'79','Oil','UK','Not Started'),(45,1,'80','Starting','UK','Not Started'),(46,1,'95','Escape & Safety','Italy','Not Started');
+/*!40000 ALTER TABLE `aircraftsystems` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `aircrafttypes`
+--
+
+DROP TABLE IF EXISTS `aircrafttypes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `aircrafttypes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `aircrafttypes`
+--
+
+LOCK TABLES `aircrafttypes` WRITE;
+/*!40000 ALTER TABLE `aircrafttypes` DISABLE KEYS */;
+INSERT INTO `aircrafttypes` VALUES (1,'AW169','AW-169');
+/*!40000 ALTER TABLE `aircrafttypes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `aros`
+--
+
+DROP TABLE IF EXISTS `aros`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `aros` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `parent_id` int(10) DEFAULT NULL,
+  `model` varchar(255) DEFAULT NULL,
+  `foreign_key` int(10) DEFAULT NULL,
+  `alias` varchar(255) DEFAULT NULL,
+  `lft` int(10) DEFAULT NULL,
+  `rght` int(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `aros`
+--
+
+LOCK TABLES `aros` WRITE;
+/*!40000 ALTER TABLE `aros` DISABLE KEYS */;
+INSERT INTO `aros` VALUES (7,NULL,'Group',8,'Group::Administrators',1,4),(8,NULL,'Group',9,'Group::Managers',5,8),(9,8,'User',7,'User::manager',6,7),(10,7,'User',8,'User::admin',2,3),(11,NULL,'Group',10,'Group::Developers',9,12),(12,NULL,'Group',11,'Group::Reviewers',13,16),(13,NULL,'Group',12,'Group::Viewers',17,20),(14,11,'User',9,'User::developer',10,11),(15,13,'User',10,'User::viewer',18,19),(16,12,'User',11,'User::reviewer',14,15);
+/*!40000 ALTER TABLE `aros` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `aros_acos`
+--
+
+DROP TABLE IF EXISTS `aros_acos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `aros_acos` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `aro_id` int(10) NOT NULL,
+  `aco_id` int(10) NOT NULL,
+  `_create` varchar(2) NOT NULL DEFAULT '0',
+  `_read` varchar(2) NOT NULL DEFAULT '0',
+  `_update` varchar(2) NOT NULL DEFAULT '0',
+  `_delete` varchar(2) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `ARO_ACO_KEY` (`aro_id`,`aco_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=126 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `aros_acos`
+--
+
+LOCK TABLES `aros_acos` WRITE;
+/*!40000 ALTER TABLE `aros_acos` DISABLE KEYS */;
+INSERT INTO `aros_acos` VALUES (35,7,68,'1','1','1','1'),(36,8,68,'-1','-1','-1','-1'),(37,8,101,'1','1','1','1'),(38,8,102,'1','1','1','1'),(39,11,101,'1','1','1','1'),(40,11,102,'1','1','1','1'),(41,12,102,'1','1','1','1'),(42,12,101,'1','1','1','1'),(43,13,101,'1','1','1','1'),(44,13,102,'1','1','1','1'),(45,11,71,'1','1','1','1'),(46,11,72,'1','1','1','1'),(47,8,72,'1','1','1','1'),(48,8,71,'1','1','1','1'),(49,12,72,'1','1','1','1'),(50,12,71,'1','1','1','1'),(51,13,71,'1','1','1','1'),(52,13,72,'1','1','1','1'),(53,11,78,'1','1','1','1'),(54,11,77,'1','1','1','1'),(55,8,77,'1','1','1','1'),(56,8,78,'1','1','1','1'),(57,12,78,'1','1','1','1'),(58,12,77,'1','1','1','1'),(59,13,77,'1','1','1','1'),(60,13,78,'1','1','1','1'),(61,11,83,'1','1','1','1'),(62,11,84,'1','1','1','1'),(63,8,84,'1','1','1','1'),(64,8,83,'1','1','1','1'),(65,12,83,'1','1','1','1'),(66,12,84,'1','1','1','1'),(67,13,84,'1','1','1','1'),(68,13,83,'1','1','1','1'),(69,11,90,'1','1','1','1'),(70,11,89,'1','1','1','1'),(71,8,89,'1','1','1','1'),(72,8,90,'1','1','1','1'),(73,12,90,'1','1','1','1'),(74,12,89,'1','1','1','1'),(75,13,89,'1','1','1','1'),(76,13,90,'1','1','1','1'),(77,11,95,'1','1','1','1'),(78,11,96,'1','1','1','1'),(79,8,96,'1','1','1','1'),(80,8,95,'1','1','1','1'),(81,12,95,'1','1','1','1'),(82,12,96,'1','1','1','1'),(83,13,96,'1','1','1','1'),(84,13,95,'1','1','1','1'),(85,11,121,'1','1','1','1'),(86,11,115,'1','1','1','1'),(87,11,116,'1','1','1','1'),(88,8,116,'1','1','1','1'),(89,12,116,'1','1','1','1'),(90,13,116,'1','1','1','1'),(91,8,115,'1','1','1','1'),(92,12,115,'1','1','1','1'),(93,13,115,'1','1','1','1'),(94,8,121,'1','1','1','1'),(95,12,121,'1','1','1','1'),(96,13,121,'1','1','1','1'),(97,12,73,'1','1','1','1'),(98,12,74,'1','1','1','1'),(99,12,91,'1','1','1','1'),(100,12,92,'1','1','1','1'),(101,11,73,'1','1','1','1'),(102,8,73,'1','1','1','1'),(103,8,75,'1','1','1','1'),(104,8,74,'1','1','1','1'),(105,11,79,'1','1','1','1'),(106,8,79,'1','1','1','1'),(107,8,81,'1','1','1','1'),(108,8,80,'1','1','1','1'),(109,8,85,'1','1','1','1'),(110,8,87,'1','1','1','1'),(111,8,86,'1','1','1','1'),(112,8,91,'1','1','1','1'),(113,8,93,'1','1','1','1'),(114,8,92,'1','1','1','1'),(115,11,91,'1','1','1','1'),(116,8,97,'1','1','1','1'),(117,8,98,'1','1','1','1'),(118,8,103,'1','1','1','1'),(119,8,104,'1','1','1','1'),(120,11,117,'1','1','1','1'),(121,8,117,'1','1','1','1'),(122,8,118,'1','1','1','1'),(123,11,118,'1','1','1','1'),(124,11,120,'1','1','1','1'),(125,8,120,'1','1','1','1');
+/*!40000 ALTER TABLE `aros_acos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `groups`
+--
+
+DROP TABLE IF EXISTS `groups`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `groups` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `groups`
+--
+
+LOCK TABLES `groups` WRITE;
+/*!40000 ALTER TABLE `groups` DISABLE KEYS */;
+INSERT INTO `groups` VALUES (8,'Administrators','2013-05-22 13:49:47','2013-05-22 13:49:47'),(9,'Managers','2013-05-22 13:49:51','2013-05-22 13:49:51'),(10,'Developers','2013-05-22 14:15:36','2013-05-22 14:15:36'),(11,'Reviewers','2013-05-22 14:15:39','2013-05-22 14:15:39'),(12,'Viewers','2013-05-22 14:15:44','2013-05-22 14:15:44');
+/*!40000 ALTER TABLE `groups` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `uploads`
+--
+
+DROP TABLE IF EXISTS `uploads`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `uploads` (
+  `id` char(36) NOT NULL,
+  `title` varchar(45) NOT NULL,
+  `filename` varchar(255) NOT NULL,
+  `filesize` int(11) unsigned NOT NULL DEFAULT '0',
+  `filemime` varchar(255) NOT NULL DEFAULT 'text/plain',
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  `uploadsource` varchar(255) DEFAULT NULL,
+  `uploadsourceid` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `uploads`
+--
+
+LOCK TABLES `uploads` WRITE;
+/*!40000 ALTER TABLE `uploads` DISABLE KEYS */;
+/*!40000 ALTER TABLE `uploads` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) NOT NULL,
+  `password` char(40) NOT NULL,
+  `group_id` int(11) NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  KEY `fk_users_groups1_idx` (`group_id`),
+  CONSTRAINT `fk_users_groups1` FOREIGN KEY (`group_id`) REFERENCES `groups` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (7,'manager','53bdb8a00b1a0da7cb6a11308e8573cb2f436fca',9,'2013-05-22 13:49:56','2013-05-22 13:49:56'),(8,'admin','7632539bbc275598de281898add43bbf77e55ee6',8,'2013-05-22 13:50:01','2013-05-22 13:50:01'),(9,'developer','2547daa0e8d12ceb1d025ab3ff3c61c1518a63ae',10,'2013-05-22 14:15:55','2013-05-22 14:15:55'),(10,'viewer','02db978404ec12216dcc2bbb54539e231271e9f8',12,'2013-05-22 14:16:10','2013-05-22 14:16:10'),(11,'reviewer','0ca6c1fa9ac98cacd45fc21bf267cd2b28a756ad',11,'2013-05-22 14:16:26','2013-05-22 14:16:26');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping routines for database 'thssdb'
+--
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2013-05-22 15:39:13
