@@ -63,7 +63,7 @@
 </div>
 <div class="related">
 	<?php if (!empty($aircraftsystem['Aircraftsystemgraphic'])): ?>
-	<h3><?php echo __('Graphics'); ?></h3>
+	<h3><?php echo __('Graphics Under Development'); ?></h3>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Media Label'); ?></th>
@@ -79,6 +79,8 @@
 	<?php
 		$i = 0;
 		foreach ($aircraftsystem['Aircraftsystemgraphic'] as $aircraftsystemgraphic): ?>
+		<?php if ( $aircraftsystemgraphic['graphic_status'] !== 'Completed' ){ ?>
+
 		<tr>
 			<td><?php echo $aircraftsystemgraphic['graphic_media_label']; ?></td>
 			<td><?php echo $aircraftsystemgraphic['graphic_title']; ?></td>
@@ -98,11 +100,61 @@
 		
 			</td>
 		</tr>
+		<?php }; //End if statement?>
 	<?php endforeach; ?>
 	</table>
 <?php endif; ?>
 </div>
-<div class="related">
+
+<div class="related">
+	<?php if (!empty($aircraftsystem['Aircraftsystemgraphic'])): ?>
+	<h3><?php echo __('Graphics Under QA'); ?></h3>
+	<table cellpadding = "0" cellspacing = "0">
+	<tr>
+		<th><?php echo __('Media Label'); ?></th>
+		<th><?php echo __('Title'); ?></th>
+		<th><?php echo __('Description'); ?></th>
+		<th><?php echo __('Type'); ?></th>
+		<th><?php echo __('Estimated Hours'); ?></th>
+		<th><?php echo __('Adjusted Hours'); ?></th>
+		<th><?php echo __('Status'); ?></th>
+		<th><?php echo __('On Hold'); ?></th>
+		<th class="actions"><?php echo __('Actions'); ?></th>
+	</tr>
+	<?php
+		$i = 0;
+		foreach ($aircraftsystem['Aircraftsystemgraphic'] as $aircraftsystemgraphic): ?>
+		<?php if ( $aircraftsystemgraphic['graphic_status'] == 'Completed' ){ ?>
+
+		<tr>
+			<td><?php echo $aircraftsystemgraphic['graphic_media_label']; ?></td>
+			<td><?php echo $aircraftsystemgraphic['graphic_title']; ?></td>
+			<td><?php echo $aircraftsystemgraphic['graphic_description']; ?></td>
+			<td><?php echo $aircraftsystemgraphic['graphic_type']; ?></td>
+			<td><?php echo $aircraftsystemgraphic['graphic_estimated_hours']; ?></td>
+			<td><?php echo $aircraftsystemgraphic['graphic_adj_estimated_hours']; ?></td>
+			
+			<td><?php if($aircraftsystemgraphic['graphic_status'] == 'Not Started') echo $this->Html->image('not_started.png', array('alt' => 'not started', 'border' => '0')); 
+			else if($aircraftsystemgraphic['graphic_status'] == 'In Progress') echo $this->Html->image('in_progress.png', array('alt' => 'in progress', 'border' => '0')); 
+			else if($aircraftsystemgraphic['graphic_status'] == 'Completed') echo $this->Html->image('completed.png', array('alt' => 'completed', 'border' => '0'));?></td> 
+			
+			<td><?php if($aircraftsystemgraphic['graphic_on_hold']) echo $this->Html->image('on_hold.png', array('alt' => 'yes', 'border' => '0')); else echo ""; ?></td> 
+			<td class="actions">
+				<?php echo $this->AclHtml->link(__('View'), array('controller' => 'aircraftsystemgraphics', 'action' => 'qa', $aircraftsystemgraphic['id'])); ?>
+						
+			</td>
+		</tr>
+		<?php }; //End if statement?>
+	<?php endforeach; ?>
+	</table>
+<?php endif; ?>
+</div>
+
+
+
+
+
+<div class="related">
 	<?php if (!empty($aircraftsystem['Aircraftsystemcomment'])): ?>
 	<h3><?php echo __('System Comments'); ?></h3>
 	<table cellpadding = "0" cellspacing = "0">

@@ -37,7 +37,7 @@ class AircraftsystemgraphicscommentsController extends AppController {
  *
  * @return void
  */
-	public function add($aircraftsystemgraphic_id = null) {
+	public function add($aircraftsystemgraphic_id = null, $commentsource = null) {
 		$this->Aircraftsystemgraphicscomment->Aircraftsystemgraphic->id = $aircraftsystemgraphic_id;
 		if (!$this->Aircraftsystemgraphicscomment->Aircraftsystemgraphic->exists()) {
 			throw new NotFoundException(__('Invalid Graphic'));
@@ -48,6 +48,7 @@ class AircraftsystemgraphicscommentsController extends AppController {
 			$this->redirect(array('controller'=>'Aircraftsystemgraphics','action' => 'view', $aircraftsystemgraphic_id));
 		}
 			$this->request->data['Aircraftsystemgraphicscomment']['aircraftsystemgraphic_id'] = $aircraftsystemgraphic_id;
+			$this->request->data['Aircraftsystemgraphicscomment']['comment_source'] = $commentsource;
 			$this->Aircraftsystemgraphicscomment->create();
 			if ($this->Aircraftsystemgraphicscomment->save($this->request->data)) {
 				$this->Session->setFlash(__('The graphic comment has been saved'));

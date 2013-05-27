@@ -67,45 +67,11 @@
 <div class="actions">
 	<ul>
 		<li><?php echo $this->AclHtml->link(__('List Graphics For System'), array('controller' => 'aircraftsystems', 'action' => 'view', $aircraftsystemgraphic['Aircraftsystem']['id'])); ?> </li>
-		<li><?php echo $this->AclHtml->link(__('Add Attachment'), array('controller' => 'uploads','action' => 'add', "Aircraftsystemgraphics", $aircraftsystemgraphic['Aircraftsystemgraphic']['id'])); ?></li>
-		<li><?php echo $this->AclHtml->link(__('Add Work Done'), array('controller' => 'Aircraftsystemgraphicbookings', 'action' => 'add', $aircraftsystemgraphic['Aircraftsystemgraphic']['id'])); ?> </li>
-		<li><?php echo $this->AclHtml->link(__('Add Comment'), array('controller' => 'aircraftsystemgraphicscomments', 'action' => 'add', $aircraftsystemgraphic['Aircraftsystemgraphic']['id'], 'Development')); ?> </li>
+		<li><?php echo $this->AclHtml->link(__('Add Comment'), array('controller' => 'aircraftsystemgraphicscomments', 'action' => 'add', $aircraftsystemgraphic['Aircraftsystemgraphic']['id'], 'QA')); ?> </li>
 		<li><?php echo '<br>'; ?></li>
 		<li><?php echo $this->Html->link(__('Logout'), array('controller' => 'users', 'action' => 'logout')); ?> </li>
 	</ul>
 </div>
-
-<div class="related">
-	<?php if (!empty($aircraftsystemgraphic['Aircraftsystemgraphicsbooking'])): ?>
-	<h3><?php echo __('Work Done'); ?></h3>
-	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Work Done'); ?></th>
-		<th><?php echo __('Created By'); ?></th>
-		<th><?php echo __('Modified By'); ?></th>
-		<th><?php echo __('Hours Expended'); ?></th>		
-		<th><?php echo __('Date Modified'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
-	<?php
-		$i = 0;
-		foreach ($aircraftsystemgraphic['Aircraftsystemgraphicsbooking'] as $aircraftsystemgraphicbooking): ?>
-		<tr>
-			<td><?php echo $aircraftsystemgraphicbooking['work_carried_out']; ?></td>
-			<td><?php echo $aircraftsystemgraphicbooking['created_by']; ?></td>
-			<td><?php echo $aircraftsystemgraphicbooking['modified_by']; ?></td>
-			<td><?php echo $aircraftsystemgraphicbooking['hours_expended']; ?></td>
-			<td><?php echo $aircraftsystemgraphicbooking['modified']; ?></td>
-			<td class="actions">
-				<?php echo $this->AclHtml->link(__('Edit'), array('controller' => 'Aircraftsystemgraphicbookings', 'action' => 'edit', $aircraftsystemgraphicbooking['id'], $aircraftsystemgraphic['Aircraftsystemgraphic']['id'])); ?>
-		
-			</td>
-		</tr>
-	<?php endforeach; ?>
-	</table>
-<?php endif; ?>
-</div>
-
 
 <div class="related">
 	<?php if (!empty($aircraftsystemgraphic['Aircraftsystemgraphicscomment'])): ?>
@@ -116,7 +82,6 @@
 		<th><?php echo __('Created By'); ?></th>
 		<th><?php echo __('Modified By'); ?></th>
 		<th><?php echo __('Date Modified'); ?></th>
-		<th><?php echo __('Source'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php
@@ -127,7 +92,6 @@
 			<td><?php echo $aircraftsystemgraphiccomment['created_by']; ?></td>
 			<td><?php echo $aircraftsystemgraphiccomment['modified_by']; ?></td>
 			<td><?php echo $aircraftsystemgraphiccomment['modified']; ?></td>
-			<td><?php echo $aircraftsystemgraphiccomment['comment_source']; ?></td>
 			<td class="actions">
 				<?php echo $this->AclHtml->link(__('Edit'), array('controller' => 'aircraftsystemgraphicscomments', 'action' => 'edit', $aircraftsystemgraphiccomment['id'], $aircraftsystemgraphic['Aircraftsystemgraphic']['id'])); ?>
 		

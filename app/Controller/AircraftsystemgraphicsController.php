@@ -7,6 +7,15 @@ App::uses('AppController', 'Controller');
  */
 class AircraftsystemgraphicsController extends AppController {
 
+public function qa($id = null) {
+		if (!$this->Aircraftsystemgraphic->exists($id)) {
+			throw new NotFoundException(__('Invalid graphic'));
+		}
+		$options = array('conditions' => array('Aircraftsystemgraphic.' . $this->Aircraftsystemgraphic->primaryKey => $id));
+		$this->set('aircraftsystemgraphic', $this->Aircraftsystemgraphic->find('first', $options));
+	}
+
+
 /**
  * index method
  *
