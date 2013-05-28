@@ -1160,3 +1160,351 @@ Request URL: /admin/acl/aircrafttypes
 Stack Trace:
 #0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-05-28 13:04:24 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\View\Aircraftsystemgraphics\qa.ctp, line 79]
+2013-05-28 13:04:24 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
+Request URL: /aircraftsystemgraphics/qa/3
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 79)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 79, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 79, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-28 13:11:54 Error: Fatal Error (1): Call to undefined function referrer() in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\Controller\AircraftsystemgraphicscommentsController.php, line 57]
+2013-05-28 13:11:54 Error: [FatalErrorException] Call to undefined function referrer()
+Request URL: /aircraftsystemgraphicscomments/add/4/Development
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Program File...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Program File...', 57, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Program File...', 57, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-28 13:12:11 Error: Fatal Error (1): Call to undefined function referer() in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\Controller\AircraftsystemgraphicscommentsController.php, line 57]
+2013-05-28 13:12:11 Error: [FatalErrorException] Call to undefined function referer()
+Request URL: /aircraftsystemgraphicscomments/add/4/Development
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Program File...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Program File...', 57, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Program File...', 57, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-28 13:37:43 Error: [NotFoundException] Invalid graphic
+Request URL: /aircraftsystemgraphics/QAPass
+Stack Trace:
+#0 [internal function]: AircraftsystemgraphicsController->QAPass()
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AircraftsystemgraphicsController), Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemgraphicsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-28 13:37:56 Error: [NotFoundException] Invalid graphic
+Request URL: /aircraftsystemgraphics/QAPass
+Stack Trace:
+#0 [internal function]: AircraftsystemgraphicsController->QAPass()
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AircraftsystemgraphicsController), Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemgraphicsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-28 13:38:44 Error: [MissingViewException] View file "C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\View\Aircraftsystemgraphics\q_a_pass.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Program Files\\Apache Software Foundation\\Apache2.4\\htdocs\\thsscake\\app\\View\\Aircraftsystemgraphics\\q_a_pass.ctp',
+)
+Request URL: /aircraftsystemgraphics/QAPass/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemgraphicsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-28 13:41:59 Error: Fatal Error (1): Cannot unset string offsets in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\View\Helper\HtmlHelper.php, line 356]
+2013-05-28 13:41:59 Error: [FatalErrorException] Cannot unset string offsets
+Request URL: /aircraftsystemgraphics/qa/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot unset st...', 'C:\Program File...', 356)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', 'C:\Program File...', 356, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', 'C:\Program File...', 356, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-28 13:42:09 Error: Fatal Error (1): Cannot unset string offsets in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\View\Helper\HtmlHelper.php, line 356]
+2013-05-28 13:42:09 Error: [FatalErrorException] Cannot unset string offsets
+Request URL: /aircraftsystemgraphics/qa/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot unset st...', 'C:\Program File...', 356)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', 'C:\Program File...', 356, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', 'C:\Program File...', 356, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-28 13:42:13 Error: Fatal Error (1): Cannot unset string offsets in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\View\Helper\HtmlHelper.php, line 356]
+2013-05-28 13:42:13 Error: [FatalErrorException] Cannot unset string offsets
+Request URL: /aircraftsystemgraphics/qa/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot unset st...', 'C:\Program File...', 356)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', 'C:\Program File...', 356, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', 'C:\Program File...', 356, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-28 13:42:35 Error: [NotFoundException] Invalid System
+Request URL: /aircraftsystemgraphics/QAPass/1/Internal
+Stack Trace:
+#0 [internal function]: AircraftsystemgraphicsController->QAPass('1', 'Internal')
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AircraftsystemgraphicsController), Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemgraphicsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-28 13:42:37 Error: [MissingViewException] View file "C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\View\Aircraftsystemgraphics\q_a_fail.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Program Files\\Apache Software Foundation\\Apache2.4\\htdocs\\thsscake\\app\\View\\Aircraftsystemgraphics\\q_a_fail.ctp',
+)
+Request URL: /aircraftsystemgraphics/QAFail/1/Internal
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemgraphicsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-28 13:43:18 Error: Fatal Error (4): syntax error, unexpected T_ELSE, expecting T_FUNCTION in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\Controller\AircraftsystemgraphicsController.php, line 37]
+2013-05-28 13:43:18 Error: [FatalErrorException] syntax error, unexpected T_ELSE, expecting T_FUNCTION
+Request URL: /aircraftsystemgraphics/QAPass/1/Internal
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 37, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 37, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-28 13:43:50 Error: Fatal Error (4): syntax error, unexpected ';', expecting T_FUNCTION in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\Controller\AircraftsystemgraphicsController.php, line 37]
+2013-05-28 13:43:50 Error: [FatalErrorException] syntax error, unexpected ';', expecting T_FUNCTION
+Request URL: /aircraftsystemgraphics/QAPass/1/Internal
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 37, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 37, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-28 13:43:57 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\Controller\AircraftsystemgraphicsController.php, line 40]
+2013-05-28 13:43:57 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /aircraftsystemgraphics/QAPass/1/Internal
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 40, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 40, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-28 13:44:32 Error: [MissingViewException] View file "C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\View\Aircraftsystemgraphics\q_a_pass.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Program Files\\Apache Software Foundation\\Apache2.4\\htdocs\\thsscake\\app\\View\\Aircraftsystemgraphics\\q_a_pass.ctp',
+)
+Request URL: /aircraftsystemgraphics/QAPass/1/Internal
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemgraphicsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-28 13:44:58 Error: [MissingViewException] View file "C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\View\Aircraftsystemgraphics\q_a_pass.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Program Files\\Apache Software Foundation\\Apache2.4\\htdocs\\thsscake\\app\\View\\Aircraftsystemgraphics\\q_a_pass.ctp',
+)
+Request URL: /aircraftsystemgraphics/QAPass/1/Internal
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemgraphicsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-28 13:46:07 Error: [MissingControllerException] Controller class AircraftsystemgraphicController could not be found.
+Exception Attributes: array (
+  'class' => 'AircraftsystemgraphicController',
+  'plugin' => NULL,
+)
+Request URL: /aircraftsystemgraphic/QAPass/1/Internal
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-28 13:46:19 Error: [MissingControllerException] Controller class AircraftsystemgraphicController could not be found.
+Exception Attributes: array (
+  'class' => 'AircraftsystemgraphicController',
+  'plugin' => NULL,
+)
+Request URL: /aircraftsystemgraphic/QAPass/1/Internal
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-28 13:46:23 Error: [MissingViewException] View file "C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\View\Aircraftsystemgraphics\q_a_pass.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Program Files\\Apache Software Foundation\\Apache2.4\\htdocs\\thsscake\\app\\View\\Aircraftsystemgraphics\\q_a_pass.ctp',
+)
+Request URL: /aircraftsystemgraphics/QAPass/1/Internal
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemgraphicsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-28 13:49:03 Error: [NotFoundException] Invalid aircraftsystem
+Request URL: /Aircraftsystems/view
+Stack Trace:
+#0 [internal function]: AircraftsystemsController->view()
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AircraftsystemsController), Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-28 13:50:32 Error: [MissingViewException] View file "C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\View\Aircraftsystemgraphics\q_a_pass.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Program Files\\Apache Software Foundation\\Apache2.4\\htdocs\\thsscake\\app\\View\\Aircraftsystemgraphics\\q_a_pass.ctp',
+)
+Request URL: /aircraftsystemgraphics/QAPass/1/External
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemgraphicsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-28 13:51:09 Error: [MissingViewException] View file "C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\View\Aircraftsystemgraphics\q_a_pass.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Program Files\\Apache Software Foundation\\Apache2.4\\htdocs\\thsscake\\app\\View\\Aircraftsystemgraphics\\q_a_pass.ctp',
+)
+Request URL: /aircraftsystemgraphics/QAPass/1/External
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemgraphicsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-28 13:52:13 Error: [MissingViewException] View file "C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\View\Aircraftsystemgraphics\qapass.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Program Files\\Apache Software Foundation\\Apache2.4\\htdocs\\thsscake\\app\\View\\Aircraftsystemgraphics\\qapass.ctp',
+)
+Request URL: /aircraftsystemgraphics/qapass/1/External
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemgraphicsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-28 13:56:42 Error: [MissingViewException] View file "C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\View\Aircraftsystemgraphics\qapass.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Program Files\\Apache Software Foundation\\Apache2.4\\htdocs\\thsscake\\app\\View\\Aircraftsystemgraphics\\qapass.ctp',
+)
+Request URL: /aircraftsystemgraphics/qapass/1/External
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemgraphicsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-28 13:57:20 Error: [MissingActionException] Action AircraftsystemsController::qa() could not be found.
+Exception Attributes: array (
+  'controller' => 'AircraftsystemsController',
+  'action' => 'qa',
+)
+Request URL: /Aircraftsystems/qa/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-28 14:08:15 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\View\Aircraftsystems\view.ctp, line 173]
+2013-05-28 14:08:15 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /Aircraftsystems/view/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Program File...', 173)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Program File...', 173, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Program File...', 173, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-28 14:10:34 Error: Fatal Error (64): Cannot redeclare AircraftsystemgraphicsController::qapass() in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\Controller\AircraftsystemgraphicsController.php, line 36]
+2013-05-28 14:10:34 Error: [FatalErrorException] Cannot redeclare AircraftsystemgraphicsController::qapass()
+Request URL: /aircraftsystemgraphics/qa/3
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\Program File...', 36)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\Program File...', 36, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\Program File...', 36, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-28 14:18:04 Error: Fatal Error (1): Call to a member function set() on a non-object in [C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\Controller\AircraftsystemgraphicbookingsController.php, line 53]
+2013-05-28 14:18:04 Error: [FatalErrorException] Call to a member function set() on a non-object
+Request URL: /Aircraftsystemgraphicbookings/add/6
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Program File...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Program File...', 53, Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Program File...', 53, Array)
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-28 14:25:35 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'graphic_title' doesn't have a default value
+Request URL: /aircraftsystemgraphics/devcomplete/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `th...')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Model\Model.php(1744): DboSource->create(Object(Aircraftsystemgraphic), Array, Array)
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\Controller\AircraftsystemgraphicsController.php(55): Model->save()
+#5 [internal function]: AircraftsystemgraphicsController->devcomplete('1')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AircraftsystemgraphicsController), Array)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemgraphicsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-28 14:28:44 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'graphic_title' doesn't have a default value
+Request URL: /aircraftsystemgraphics/devcomplete/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `th...')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Model\Model.php(1744): DboSource->create(Object(Aircraftsystemgraphic), Array, Array)
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\Controller\AircraftsystemgraphicsController.php(55): Model->save(Array)
+#5 [internal function]: AircraftsystemgraphicsController->devcomplete('1')
+#6 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AircraftsystemgraphicsController), Array)
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemgraphicsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-28 14:31:16 Error: [MissingViewException] View file "C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\View\Aircraftsystemgraphics\devcomplete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Program Files\\Apache Software Foundation\\Apache2.4\\htdocs\\thsscake\\app\\View\\Aircraftsystemgraphics\\devcomplete.ctp',
+)
+Request URL: /aircraftsystemgraphics/devcomplete/1
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemgraphicsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-28 14:58:53 Error: [PDOException] SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'graphic_status' at row 1
+Request URL: /aircraftsystemgraphics/uploadedtolcms/3
+Stack Trace:
+#0 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('UPDATE `thssdb`...', Array)
+#2 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Model\Datasource\Database\Mysql.php(379): DboSource->execute('UPDATE `thssdb`...')
+#3 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Model\Model.php(1733): Mysql->update(Object(Aircraftsystemgraphic), Array, Array)
+#4 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Model\Model.php(1592): Model->save(Array, Array)
+#5 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\Controller\AircraftsystemgraphicsController.php(68): Model->saveField('graphic_status', 'Uploaded to LCM...')
+#6 [internal function]: AircraftsystemgraphicsController->uploadedtolcms('3')
+#7 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(AircraftsystemgraphicsController), Array)
+#8 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(AircraftsystemgraphicsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\thsscake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}

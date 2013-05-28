@@ -33,8 +33,21 @@
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Status'); ?></dt>
-		<dd>
+		<dd class="actions">
 			<?php echo h($aircraftsystemgraphic['Aircraftsystemgraphic']['graphic_status']); ?>
+			<?php echo $this->AclHtml->link(__('Development Complete'), array('controller' => 'aircraftsystemgraphics', 'action' => 'devcomplete', $aircraftsystemgraphic['Aircraftsystemgraphic']['id'])); ?>		
+			&nbsp;
+		</dd>
+		<dt><?php echo __('On Hold'); ?></dt>
+		<dd class="actions">
+			<?php if($aircraftsystemgraphic['Aircraftsystemgraphic']['graphic_on_hold']) echo $this->Html->image('completed.png', array('alt' => 'yes', 'border' => '0')); else echo $this->Html->image('not_started.png', array('alt' => 'no', 'border' => '0')); ?>
+			<?php 
+			if ( !$aircraftsystemgraphic['Aircraftsystemgraphic']['graphic_on_hold'] ) {
+				echo $this->AclHtml->link(__('Place On Hold'), array('controller' => 'aircraftsystemgraphics', 'action' => 'onhold', $aircraftsystemgraphic['Aircraftsystemgraphic']['id'], 'tohold')); 
+			} else if ( $aircraftsystemgraphic['Aircraftsystemgraphic']['graphic_on_hold'] ) { 
+			echo $this->AclHtml->link(__('Make Active'), array('controller' => 'aircraftsystemgraphics', 'action' => 'onhold', $aircraftsystemgraphic['Aircraftsystemgraphic']['id'], 'fromhold')); 
+			};
+			?>		
 			&nbsp;
 		</dd>
 		<?php if (!empty($aircraftsystemgraphic['uploads'])): ?>
@@ -55,7 +68,7 @@
 				<td><?php echo h(round($upload['filesize']/1024/1024,2)." Mb"); ?>&nbsp;</td>
 				<td><?php echo h($upload['modified']); ?>&nbsp;</td>
 				<td class="actions">
-				<?php echo $this->Html->link(__('Download', true), array('controller' => 'uploads','action' => 'download', $upload['id'])); ?>
+				<?php echo $this->AclHtml->link(__('Download', true), array('controller' => 'uploads','action' => 'download', $upload['id'])); ?>
 				</td>
 			</tr>
 			<?php endforeach; ?>

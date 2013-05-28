@@ -50,6 +50,8 @@ class AircraftsystemgraphicbookingsController extends AppController {
 			$this->request->data['Aircraftsystemgraphicbooking']['aircraftsystemgraphic_id'] = $aircraftsystemgraphic_id;
 			$this->Aircraftsystemgraphicbooking->create();
 			if ($this->Aircraftsystemgraphicbooking->save($this->request->data)) {
+			$this->Aircraftsystemgraphicbooking->Aircraftsystemgraphic->set('graphic_status', "In Progress");
+			$this->Aircraftsystemgraphicbooking->Aircraftsystemgraphic->save();
 				$this->Session->setFlash(__('The work done has been saved'));
 				$this->redirect(array('controller'=>'Aircraftsystemgraphics','action' => 'view', $aircraftsystemgraphic_id));
 			} else {

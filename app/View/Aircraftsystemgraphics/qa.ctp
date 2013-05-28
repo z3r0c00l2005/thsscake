@@ -27,14 +27,18 @@
 			<?php echo h($aircraftsystemgraphic['Aircraftsystemgraphic']['graphic_type']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Estimated Hours'); ?></dt>
-		<dd>
-			<?php echo h($aircraftsystemgraphic['Aircraftsystemgraphic']['graphic_adj_estimated_hours']); ?>
-			&nbsp;
-		</dd>
 		<dt><?php echo __('Status'); ?></dt>
 		<dd>
-			<?php echo h($aircraftsystemgraphic['Aircraftsystemgraphic']['graphic_status']); ?>
+			<?php 
+			if ( $aircraftsystemgraphic['Aircraftsystemgraphic']['graphic_status'] == 'Completed' ) {
+				echo h("QA Not Started");
+			}
+			else if ( $aircraftsystemgraphic['Aircraftsystemgraphic']['graphic_status'] == 'InternalOK' ) {
+				echo h("Internal QA Passed");
+			}
+			else if ( $aircraftsystemgraphic['Aircraftsystemgraphic']['graphic_status'] == 'QACompleted' ) {
+				echo h("External QA Passed");
+			};	?>
 			&nbsp;
 		</dd>
 		<?php if (!empty($aircraftsystemgraphic['uploads'])): ?>
@@ -67,10 +71,49 @@
 <div class="actions">
 	<ul>
 		<li><?php echo $this->AclHtml->link(__('List Graphics For System'), array('controller' => 'aircraftsystems', 'action' => 'view', $aircraftsystemgraphic['Aircraftsystem']['id'])); ?> </li>
-		<li><?php echo $this->AclHtml->link(__('Add Comment'), array('controller' => 'aircraftsystemgraphicscomments', 'action' => 'add', $aircraftsystemgraphic['Aircraftsystemgraphic']['id'], 'QA')); ?> </li>
+		
+		
+		<li><?php 
+			if ( $aircraftsystemgraphic['Aircraftsystemgraphic']['graphic_status'] == 'Completed' ) {
+				echo $this->AclHtml->link(__('Add Comment'), array('controller' => 'aircraftsystemgraphicscomments', 'action' => 'add', $aircraftsystemgraphic['Aircraftsystemgraphic']['id'], 'Internal QA'));
+			}
+			else if ( $aircraftsystemgraphic['Aircraftsystemgraphic']['graphic_status'] == 'InternalOK' ) {
+				echo $this->AclHtml->link(__('Add Comment'), array('controller' => 'aircraftsystemgraphicscomments', 'action' => 'add', $aircraftsystemgraphic['Aircraftsystemgraphic']['id'], 'External QA'));
+			}
+			else if ( $aircraftsystemgraphic['Aircraftsystemgraphic']['graphic_status'] == 'QACompleted' ) {
+				echo " ";
+			};	?>
+		
+		</li>
+		
 		<li><?php echo '<br>'; ?></li>
 		<li><?php echo $this->Html->link(__('Logout'), array('controller' => 'users', 'action' => 'logout')); ?> </li>
 	</ul>
+</div>
+
+<div class="related">
+	<?php if ( $aircraftsystemgraphic['Aircraftsystemgraphic']['graphic_status'] == 'Completed' ): ?>
+	<h3><?php echo __('Internal QA Results'); ?></h3>
+	<div class="actions">
+	<ul>
+		<li><?php echo $this->AclHtml->link(__('Pass'), array('controller' => 'aircraftsystemgraphics', 'action' => 'qapass', $aircraftsystemgraphic['Aircraftsystemgraphic']['id'], 'Internal')); ?></li>
+		<li><?php echo $this->AclHtml->link(__('Fail'), array('controller' => 'aircraftsystemgraphics', 'action' => 'qafail', $aircraftsystemgraphic['Aircraftsystemgraphic']['id'], 'Internal')); ?></li>
+	</ul>
+	
+	</div>
+	<?php endif; ?>
+</div>
+
+<div class="related">	
+	<?php if ( $aircraftsystemgraphic['Aircraftsystemgraphic']['graphic_status'] == 'InternalOK' ): ?>
+	<h3><?php echo __('External QA Results'); ?></h3>
+	<div class="actions">
+	<ul>
+		<li><?php echo $this->AclHtml->link(__('Pass'), array('controller' => 'aircraftsystemgraphics', 'action' => 'qapass', $aircraftsystemgraphic['Aircraftsystemgraphic']['id'], 'External')); ?></li>
+		<li><?php echo $this->AclHtml->link(__('Fail'), array('controller' => 'aircraftsystemgraphics', 'action' => 'qafail', $aircraftsystemgraphic['Aircraftsystemgraphic']['id'], 'External')); ?></li>
+	</ul>
+	</div>
+	<?php endif; ?>
 </div>
 
 <div class="related">
@@ -79,9 +122,9 @@
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Comment'); ?></th>
-		<th><?php echo __('Created By'); ?></th>
 		<th><?php echo __('Modified By'); ?></th>
 		<th><?php echo __('Date Modified'); ?></th>
+		<th><?php echo __('Source'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php
@@ -89,9 +132,9 @@
 		foreach ($aircraftsystemgraphic['Aircraftsystemgraphicscomment'] as $aircraftsystemgraphiccomment): ?>
 		<tr>
 			<td><?php echo $aircraftsystemgraphiccomment['comment']; ?></td>
-			<td><?php echo $aircraftsystemgraphiccomment['created_by']; ?></td>
 			<td><?php echo $aircraftsystemgraphiccomment['modified_by']; ?></td>
 			<td><?php echo $aircraftsystemgraphiccomment['modified']; ?></td>
+			<td><?php echo $aircraftsystemgraphiccomment['comment_source']; ?></td>
 			<td class="actions">
 				<?php echo $this->AclHtml->link(__('Edit'), array('controller' => 'aircraftsystemgraphicscomments', 'action' => 'edit', $aircraftsystemgraphiccomment['id'], $aircraftsystemgraphic['Aircraftsystemgraphic']['id'])); ?>
 		

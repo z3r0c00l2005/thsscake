@@ -53,7 +53,14 @@ class AircraftsystemgraphicscommentsController extends AppController {
 			if ($this->Aircraftsystemgraphicscomment->save($this->request->data)) {
 				$this->Session->setFlash(__('The graphic comment has been saved'));
 			//	$this->redirect(array('action' => 'index'));
+			//	$this->redirect(array('controller'=>'Aircraftsystemgraphics','action' => 'view', $aircraftsystemgraphic_id));
+			if ( $commentsource == "Development" ) {
 				$this->redirect(array('controller'=>'Aircraftsystemgraphics','action' => 'view', $aircraftsystemgraphic_id));
+				}
+			else if ($commentsource == "Internal QA" || $commentsource == "External QA" ) {
+				$this->redirect(array('controller'=>'Aircraftsystemgraphics','action' => 'qa', $aircraftsystemgraphic_id));
+			}
+				
 			} else {
 				$this->Session->setFlash(__('The graphic comment could not be saved. Please, try again.'));
 			}

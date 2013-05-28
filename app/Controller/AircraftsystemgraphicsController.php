@@ -7,7 +7,7 @@ App::uses('AppController', 'Controller');
  */
 class AircraftsystemgraphicsController extends AppController {
 
-public function qa($id = null) {
+	public function qa($id = null) {
 		if (!$this->Aircraftsystemgraphic->exists($id)) {
 			throw new NotFoundException(__('Invalid graphic'));
 		}
@@ -15,7 +15,60 @@ public function qa($id = null) {
 		$this->set('aircraftsystemgraphic', $this->Aircraftsystemgraphic->find('first', $options));
 	}
 
+	public function qapass($id = null,$QAType = null) {
+		if (!$this->Aircraftsystemgraphic->exists($id)) {
+			throw new NotFoundException(__('Invalid graphic'));
+		}
+		$this->Aircraftsystemgraphic->id = $id;
+		if ($QAType == "Internal" ){
+			$this->Aircraftsystemgraphic->set('graphic_status', "InternalOK");
+			$this->Aircraftsystemgraphic->save();
+			$this->redirect(array('controller'=>'Aircraftsystemgraphics','action' => 'qa', $id));
+		}
+		if ($QAType == "External" ){
+			$this->Aircraftsystemgraphic->set('graphic_status', "QACompleted");
+			$this->Aircraftsystemgraphic->save();
+			$this->redirect(array('controller'=>'Aircraftsystemgraphics','action' => 'qa', $id));
+		}
+	}		
+	
+	
+	public function qafail($id = null,$QAType = null) {
+		if (!$this->Aircraftsystemgraphic->exists($id)) {
+			throw new NotFoundException(__('Invalid graphic'));
+		}
+		$this->Aircraftsystemgraphic->id = $id;
+		if ($QAType == "Internal" ){
+			$this->Aircraftsystemgraphic->set('graphic_status', "In Progress");
+			$this->Aircraftsystemgraphic->save();
+			$this->redirect(array('controller'=>'Aircraftsystemgraphics','action' => 'qa', $id));
+		}
+		if ($QAType == "External" ){
+			$this->Aircraftsystemgraphic->set('graphic_status', "In Progress");
+			$this->Aircraftsystemgraphic->save();
+			$this->redirect(array('controller'=>'Aircraftsystemgraphics','action' => 'qa', $id));
+		}
+	}		
 
+	public function devcomplete($id = null) {
+		$this->Aircraftsystemgraphic->id = $id;
+		$this->Aircraftsystemgraphic->saveField('graphic_status', "Completed");
+		$this->redirect(array('controller'=>'Aircraftsystemgraphics','action' => 'view', $id));
+	}
+
+	public function onhold($id = null,$action = null) {
+		$this->Aircraftsystemgraphic->id = $id;
+		if ($action == "tohold") $this->Aircraftsystemgraphic->saveField('graphic_on_hold', true);
+		if ($action == "fromhold") $this->Aircraftsystemgraphic->saveField('graphic_on_hold', false);
+		$this->redirect(array('controller'=>'Aircraftsystemgraphics','action' => 'view', $id));
+	}	
+	
+	public function uploadedtolcms($id = null,$action = null) {
+		$this->Aircraftsystemgraphic->id = $id;
+		$this->Aircraftsystemgraphic->saveField('graphic_status', 'Uploaded to LCMS');
+		$this->redirect($this->referer());
+	}	
+	
 /**
  * index method
  *
