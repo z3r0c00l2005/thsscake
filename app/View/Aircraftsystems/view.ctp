@@ -133,7 +133,7 @@
 			<td class="actions">
 				<?php if($aircraftsystemgraphic['graphic_status'] == 'QACompleted') {
 					echo $this->AclHtml->link(__('View QA'), array('controller' => 'aircraftsystemgraphics', 'action' => 'qa', $aircraftsystemgraphic['id']));
-					echo $this->AclHtml->link(__('Uploaded to LDMS'), array('controller' => 'aircraftsystemgraphics', 'action' => 'uploadedtolcms', $aircraftsystemgraphic['id'])); 
+					echo $this->AclHtml->link(__('Uploaded to LCMS'), array('controller' => 'aircraftsystemgraphics', 'action' => 'uploadedtolcms', $aircraftsystemgraphic['id'])); 
 				} else {
 					echo $this->AclHtml->link(__('QA'), array('controller' => 'aircraftsystemgraphics', 'action' => 'qa', $aircraftsystemgraphic['id']));
 				};
